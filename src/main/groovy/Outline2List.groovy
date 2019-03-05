@@ -39,4 +39,4 @@ System.in.newReader()
 
 out prevOutput
 
-def out(String line) { println line.replaceAll(/\s\s+/, " ") }
+def out(String line) { println line?.replaceAll(/\s\s+/, " ") }

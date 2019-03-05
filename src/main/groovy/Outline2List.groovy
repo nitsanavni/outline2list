@@ -35,6 +35,8 @@ System.in.newReader()
     doOuput ? output : null
 }
 .minus(null)
-        .each { String line ->println line.replaceAll(/\s\s+/, " ") }
+        .each { out it }
 
-println prevOutput
+out prevOutput
+
+def out(String line) { println line.replaceAll(/\s\s+/, " ") }
